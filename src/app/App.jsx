@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import SearchBar from '../components/Searchbar'
+import SearchBar from '../components/SearchBar'
 import ImageGrid from '../components/ImageGrid'
 import { searchPhotos } from '../services/unsplash'
 

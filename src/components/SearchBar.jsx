@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-export default function Searchbar({ onSearch, defaultValue = '' }) {
+export default function SearchBar({ onSearch, defaultValue = '' }) {
   const [value, setValue] = useState(defaultValue)
 
   const handleSubmit = (e) => {
