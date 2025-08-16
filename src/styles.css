@@ -1,16 +1,33 @@
-:root { font-family: system-ui, Arial, sans-serif; }
-* { box-sizing: border-box; }
-body { margin: 0; background: #fafafa; color: #111; }
+:root {
+  font-family: system-ui, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #fafafa;
+  color: #111;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 .container {
-  width: 100%;
-  height: auto;
+  flex: 1;
   display: flex;
   flex-direction: column;
   padding: 24px 16px;
+  width: 100%;
+  height: 100%;
 }
 
-h1 { text-align: center; margin-bottom: 18px; }
+h1 {
+  text-align: center;
+  margin-bottom: 18px;
+}
 
 .search {
   display: flex;
@@ -18,12 +35,14 @@ h1 { text-align: center; margin-bottom: 18px; }
   justify-content: center;
   margin: 16px auto 24px;
 }
+
 .search input {
   width: min(520px, 90vw);
   padding: 10px 12px;
   border: 1px solid #ddd;
   border-radius: 10px;
 }
+
 .search button {
   padding: 10px 14px;
   border: 0;
@@ -32,21 +51,33 @@ h1 { text-align: center; margin-bottom: 18px; }
   color: white;
   cursor: pointer;
 }
-.search button:hover { filter: brightness(1.05); }
 
-.status { text-align: center; }
-.status.error { color: #b00020; }
-.hint { text-align: center; opacity: .7; }
+.search button:hover {
+  filter: brightness(1.05);
+}
+
+.status {
+  text-align: center;
+}
+
+.status.error {
+  color: #b00020;
+}
+
+.hint {
+  text-align: center;
+  opacity: .7;
+}
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  display: flex;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  flex: 1;
   width: 100%;
   height: 100%;
-  gap: 12px;
 }
+
 .card {
   background: white;
   border-radius: 12px;
@@ -54,6 +85,20 @@ h1 { text-align: center; margin-bottom: 18px; }
   text-decoration: none;
   color: inherit;
   box-shadow: 0 4px 10px rgba(0,0,0,.06);
+  display: flex;
+  flex-direction: column;
 }
-.card img { width: 100%; height: 220px; object-fit: cover; display: block; }
-.meta { display: flex; justify-content: space-between; padding: 8px 10px; font-size: 12px; opacity: .85; }
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.meta {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  font-size: 12px;
+  opacity: .85;
+}
