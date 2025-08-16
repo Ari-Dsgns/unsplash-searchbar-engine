@@ -88,6 +88,7 @@ h1 {
   display: inline-block; /* MUY importante para que funcione */
   margin-bottom: 16px;
   width: 100%;
+  border-radius: 0px;
   overflow: hidden;
   background: white;
   box-shadow: 0 4px 10px rgba(0,0,0,.06);
@@ -100,15 +101,11 @@ h1 {
   object-fit: cover;
 }
 .meta {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
-  right: 8px;
   display: flex;
   justify-content: space-between;
+  padding: 8px 10px;
   font-size: 12px;
-  color: white;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+  opacity: .85;
 }
 
 @media (max-width: 1200px) {
