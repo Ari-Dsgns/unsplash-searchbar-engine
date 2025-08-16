@@ -27,7 +27,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>🔍 UNSPLASH SEARCHBAR ENGINE</h1>
+      <h1>SEARCHBAR ENGINE</h1>
 
       <SearchBar onSearch={onSearch} defaultValue={query} />
 

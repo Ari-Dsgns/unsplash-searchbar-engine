@@ -88,7 +88,6 @@ h1 {
   display: inline-block; /* MUY importante para que funcione */
   margin-bottom: 16px;
   width: 100%;
-  border-radius: 12px;
   overflow: hidden;
   background: white;
   box-shadow: 0 4px 10px rgba(0,0,0,.06);
