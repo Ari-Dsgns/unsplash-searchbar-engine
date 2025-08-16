@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  background: #f8cb74;
+  background: #ebebeb;
   color: #111;
   min-height: 100vh;
   display: flex;
@@ -88,7 +88,7 @@ h1 {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.75);
+  background: rgb(255, 255, 255);
   border-radius: 12px;
   overflow: hidden;
   text-decoration: none;
@@ -99,8 +99,9 @@ h1 {
 }
 
 .card img {
-  width: auto;
+  width: 100%;
   height: auto;
+  background-size: cover;
   object-fit: cover;
   display: block;
 }
