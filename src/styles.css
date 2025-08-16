@@ -79,36 +79,45 @@ h1 {
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 16px;
-  flex: 1;
+  column-count: 3; /* o 4 según lo ancho que quieras */
+  column-gap: 16px;
   width: 100%;
-  height: 100%;
 }
 
 .card {
-  background: rgb(255, 255, 255);
+  display: inline-block; /* MUY importante para que funcione */
+  margin-bottom: 16px;
+  width: 100%;
   border-radius: 12px;
   overflow: hidden;
-  text-decoration: none;
-  color: inherit;
+  background: white;
   box-shadow: 0 4px 10px rgba(0,0,0,.06);
-  display: flex;
-  flex-direction: column;
 }
 
 .card img {
   width: 100%;
-  height: auto;
-  background-size: cover;
-  object-fit: cover;
+  height: auto; /* Mantiene proporciones originales */
   display: block;
+  object-fit: cover;
 }
 .meta {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
   display: flex;
   justify-content: space-between;
-  padding: 8px 10px;
   font-size: 12px;
-  opacity: .85;
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+}
+
+@media (max-width: 1200px) {
+  .grid { column-count: 3; }
+}
+@media (max-width: 800px) {
+  .grid { column-count: 2; }
+}
+@media (max-width: 500px) {
+  .grid { column-count: 1; }
 }
