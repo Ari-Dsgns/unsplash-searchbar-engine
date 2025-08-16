@@ -3,6 +3,7 @@ import SearchBar from '../components/SearchBar'
 import ImageGrid from '../components/ImageGrid'
 import { searchPhotos } from '../services/unsplash'
 
+
 export default function App() {
   const [query, setQuery] = useState('')
   const [images, setImages] = useState([])

@@ -1,5 +1,6 @@
 import { useState } from 'react'
 
+
 export default function SearchBar({ onSearch, defaultValue = '' }) {
   const [value, setValue] = useState(defaultValue)
 
