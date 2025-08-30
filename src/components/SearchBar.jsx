@@ -13,7 +13,7 @@ export default function SearchBar({ onSearch, defaultValue = '' }) {
     <form className="search" onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder="Busca en Unsplash…"
+        placeholder="¿Qué estás buscando?"
         value={value}
         onChange={(e) => setValue(e.target.value)}
       />

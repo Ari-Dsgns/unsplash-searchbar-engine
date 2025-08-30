@@ -27,7 +27,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>SEARCHBAR IMAGES ENGINE</h1>
+      <h1>IMAGE SEARCHBAR ENGINE</h1>
       
 
       <SearchBar onSearch={onSearch} defaultValue={query} />
