@@ -28,6 +28,7 @@ export default function App() {
   return (
     <div className="container">
       <h1>SEARCHBAR ENGINE</h1>
+      
 
       <SearchBar onSearch={onSearch} defaultValue={query} />
 

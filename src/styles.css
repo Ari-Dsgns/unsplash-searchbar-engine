@@ -9,7 +9,7 @@
 
 body {
   margin: 0;
-  background: #ebebeb;
+  background: transparent;
   color: #111;
   min-height: 100vh;
   display: flex;
@@ -34,6 +34,7 @@ h1 {
   margin-bottom: 18px;
 }
 
+
 .search {
   display: flex;
   gap: 8px;
@@ -46,16 +47,16 @@ h1 {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  width: min(520px, 90vw);
+  width: min(300px, 90vw);
   padding: 10px 12px;
   border: 1px solid #ddd;
-  border-radius: 10px;
+  border-radius: 1px;
 }
 
 .search button {
   padding: 10px 14px;
   border: 0;
-  border-radius: 10px;
+  border-radius: 1px;
   background: #333E4D;
   color: white;
   cursor: pointer;
